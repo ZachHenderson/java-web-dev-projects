@@ -1,5 +1,7 @@
 package org.launchcode;
 
+import java.util.Date;
+
 public class MenuItem {
     private double price;
     private String description;
@@ -27,6 +29,11 @@ public class MenuItem {
 
     public void setNew(boolean aNew) {
         isNew = aNew;
+    }
+
+    @Override
+    public String toString() {
+        return "name: " + this.description + "\ncategory: " + this.category + "\nprice: " + this.price;
     }
 }
 
