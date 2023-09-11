@@ -7,12 +7,12 @@ public class MenuItem {
     private String category;
     private boolean isNew;
 
-    public MenuItem(String name, String description, double price, String category, boolean isClassic) {
+    public MenuItem(String name, String description, double price, String category, boolean isNew) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.category = category;
-        this.isClassic = isClassic;
+        this.isNew = isNew;
     }
 
     public void setName(String name) {
@@ -32,6 +32,14 @@ public class MenuItem {
     }
 
     public void setNew(boolean isNew) {
-        this.isClassic = isClassic;
+        this.isNew = isNew;
     }
 }
+
+public boolean isNew() {
+
+}
+
+
+
+
